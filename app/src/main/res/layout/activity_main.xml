@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grass"
+    tools:context=".MainActivity">
+    <!-- .png drag and drop in drawable and the charatistics must be lower case and no spaces and no numbers no symbol-->
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/etTo"
+        android:hint="To"
+        android:background="@android:color/darker_gray"
+        />
+    <!--input type can change the input keyboard-->
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSubject"
+        android:hint="Subject"
+        android:background="@android:color/darker_gray"
+        />
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/ccTo"
+        android:hint="CC To"
+        android:background="@android:color/darker_gray"
+        />
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/bccTo"
+        android:hint="BCC To"
+        android:background="@android:color/darker_gray"
+        />
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMsg"
+        android:hint="Message"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        />
+    <!--input type can change the edit Text to sevrale lines that can be set in "android:lines="5""-->
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/btnSend"
+        />
+</LinearLayout>
